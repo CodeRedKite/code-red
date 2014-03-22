@@ -12,7 +12,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-.clearfix {
+ .clearfix {
   *zoom: 1;
 }
 .clearfix:before,
@@ -1969,7 +1969,7 @@ table th[class*="span"],
  *  Twitter: http://twitter.com/fortaweso_me
  *  Work: Lead Product Designer @ http://kyruus.com
  */
-@font-face {
+ @font-face {
   font-family: 'FontAwesome';
   src: url('../font/fontawesome-webfont.eot?v=3.0.1');
   src: url('../font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('../font/fontawesome-webfont.woff?v=3.0.1') format('woff'), url('../font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
@@ -1977,7 +1977,7 @@ table th[class*="span"],
   font-style: normal;
 }
 /*  Font Awesome styles
-    ------------------------------------------------------- */
+------------------------------------------------------- */
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -2237,7 +2237,7 @@ ul.icons li [class*=" icon-"] {
   }
 }
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
+readers do not read off random characters that represent icons */
 .icon-glass:before {
   content: "\f000";
 }
@@ -6178,7 +6178,7 @@ a:active {
 /**
  * Core brick
  */
-.brow {
+ .brow {
   margin-left: 0px;
   *zoom: 1;
 }
@@ -6245,7 +6245,7 @@ a:active {
  * HEADER
  * -------------------------------------------------------------
  */
-#header {
+ #header {
   background: url(../img/header-bg.jpg) no-repeat fixed center center transparent;
   background-size: cover;
 }
@@ -6406,7 +6406,7 @@ a:active {
  * SLIDER
  *
  */
-#slider {
+ #slider {
   background: url(../img/header-bg.png) no-repeat fixed center center transparent;
   background-size: cover;
   color: #fff;
@@ -6599,7 +6599,7 @@ a:active {
  * NAV BAR
  * -------------------------------------------------------------
  */
-.navbar {
+ .navbar {
   margin-bottom: 0;
 }
 .navbar .brand {
@@ -6671,7 +6671,7 @@ a:active {
  * SECTION
  * -------------------------------------------------------------
  */
-.section {
+ .section {
   padding: 90px 0 0 0;
 }
 .section .hero {
@@ -6691,7 +6691,7 @@ a:active {
  * SERVICES
  * -------------------------------------------------------------
  */
-#services {
+ #services {
   text-align: center;
   font-size: 19.2px;
 }
@@ -6728,7 +6728,7 @@ a:active {
  * PORTFOLIO
  * -------------------------------------------------------------
  */
-#portfolio {
+ #portfolio {
   text-align: center;
   font-size: 19.2px;
   /**** Isotope Filtering ****/
@@ -6861,7 +6861,7 @@ a:active {
  * DIVIDER
  * ------------------------------------------
  */
-.divider {
+ .divider {
   padding-top: 50px;
 }
 .divider .bg-holder {
@@ -6946,7 +6946,7 @@ a:active {
  * ABOUT US
  * ---------------------------------------------------------
  */
-#about-us .container {
+ #about-us .container {
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
@@ -7039,7 +7039,7 @@ a:active {
  * TESTIMONIAL
  * -------------------------------------
  */
-#testimonial {
+ #testimonial {
   color: #fff;
 }
 #testimonial h3 {
@@ -7072,7 +7072,7 @@ a:active {
  * BLOG
  * -----------------------
  */
-#blog .hero {
+ #blog .hero {
   border-bottom: none;
 }
 #blog [class*=brick] {
@@ -7155,7 +7155,7 @@ a:active {
 /**
  * Modal box
  */
-.modal {
+ .modal {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -7245,7 +7245,7 @@ a:active {
 /**
  * Contact
  */
-#contact {
+ #contact {
   padding-bottom: 50px;
 }
 #contact .map iframe {
@@ -7259,7 +7259,7 @@ a:active {
 /**
  * Progess bar
  */
-.progress {
+ .progress {
   height: 30px;
   margin-bottom: 10px;
   background: #ccc;
@@ -7286,7 +7286,7 @@ a:active {
 /**
  * Blog page
  */
-#blog-content .meta {
+ #blog-content .meta {
   position: relative;
   background: rgba(51, 204, 102, 0.9);
   margin-top: -60px;
@@ -7320,7 +7320,7 @@ blockquote p {
 /**
  * Comment list
  */
-.commentlist {
+ .commentlist {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -7410,7 +7410,7 @@ blockquote p {
  * footer
  *
  */
-#footer {
+ #footer {
   background: #33cc66;
   padding: 10px 0;
   color: #fff;
@@ -7423,7 +7423,7 @@ blockquote p {
 /**
  * Search
  */
-#search input#s {
+ #search input#s {
   background: url(../img/search.png) right center no-repeat #ffffff;
   border: 1px solid #33cc66;
   -webkit-box-shadow: none;
@@ -7440,7 +7440,7 @@ blockquote p {
 /**
  * Sidebar
  */
-.widget {
+ .widget {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
@@ -7857,19 +7857,19 @@ input[type="submit"].btn.btn-mini {
 
 
 .input_sliders {
-    float:left;
+  float:left;
 }
 
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
    follow these rules. Every browser that supports :checked also supports :not(), so
    it doesn’t make the test unnecessarily selective */
-.input_sliders:not(:checked) > input {
+   .input_sliders:not(:checked) > input {
     position:absolute;
     top:-9999px;
     clip:rect(0,0,0,0);
-}
+  }
 
-.input_sliders:not(:checked) > label {
+  .input_sliders:not(:checked) > label {
     float:right;
     width:1em;
     padding:0 .1em;
@@ -7880,34 +7880,34 @@ input[type="submit"].btn.btn-mini {
     line-height:1.2;
     color:#ddd;
     text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
-}
+  }
 
-.input_sliders:not(:checked) > label:before {
+  .input_sliders:not(:checked) > label:before {
     content: '★ ';
-}
+  }
 
-.input_sliders > input:checked ~ label {
+  .input_sliders > input:checked ~ label {
     color: #f70;
     text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
-}
+  }
 
-.input_sliders:not(:checked) > label:hover,
-.input_sliders:not(:checked) > label:hover ~ label {
+  .input_sliders:not(:checked) > label:hover,
+  .input_sliders:not(:checked) > label:hover ~ label {
     color: gold;
     text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-}
+  }
 
-.input_sliders > input:checked + label:hover,
-.input_sliders > input:checked + label:hover ~ label,
-.input_sliders > input:checked ~ label:hover,
-.input_sliders > input:checked ~ label:hover ~ label,
-.input_sliders > label:hover ~ input:checked ~ label {
+  .input_sliders > input:checked + label:hover,
+  .input_sliders > input:checked + label:hover ~ label,
+  .input_sliders > input:checked ~ label:hover,
+  .input_sliders > input:checked ~ label:hover ~ label,
+  .input_sliders > label:hover ~ input:checked ~ label {
     color: #ea0;
     text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-}
+  }
 
-.input_sliders > label:active {
+  .input_sliders > label:active {
     position:relative;
     top:2px;
     left:2px;
-}
+  }
