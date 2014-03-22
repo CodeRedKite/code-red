@@ -12,6 +12,10 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
+@font-face {
+font-family: BPreplay;
+src: url("../font/BPreplay.otf") format("opentype");
+}
  .clearfix {
   *zoom: 1;
 }
@@ -225,7 +229,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'BPreplay', sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -1977,21 +1981,31 @@ table th[class*="span"],
   background-color: #c4e3f3;
 }
 
+#infographic {
+  margin-top:14px;
+}
 #options {
   margin-top:25px;
 }
 .radio-set {
   margin-bottom:13px;
 }
+.radio-set:hover {
+  cursor:pointer;
+}
+.radio-set:hover .radio-button {
+  background-image:url("/assets/img/radio_but_on.png");
+}
 .radio-text {
-  line-height:38px;
+  line-height:39px;
+  font-size:16px;
 }
 .radio-button {
   background-image:url("/assets/img/radio_but_off.png");
   display:inline-block;
   width:38px;
   height:38px;
-  vertical-align:middle;
+  vertical-align:top;
   margin-left:10px;
 }
 .radio-button:hover {
