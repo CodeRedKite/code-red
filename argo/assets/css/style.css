@@ -1976,6 +1976,29 @@ table th[class*="span"],
 .table-hover tbody tr.info:hover > td {
   background-color: #c4e3f3;
 }
+
+#options {
+  margin-top:25px;
+}
+.radio-set {
+  margin-bottom:13px;
+}
+.radio-text {
+  line-height:38px;
+}
+.radio-button {
+  background-image:url("/assets/img/radio_but_off.png");
+  display:inline-block;
+  width:38px;
+  height:38px;
+  vertical-align:middle;
+  margin-left:10px;
+}
+.radio-button:hover {
+  background-image:url("/assets/img/radio_but_on.png");
+  cursor:pointer;
+}
+
 /*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
