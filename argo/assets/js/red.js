@@ -20,9 +20,9 @@ jQuery(function($) {
     $('.brick3 .inner p').html(question.impact);
     for (var i = 0; i < question.answers.length; i++) {
       console.log(question.answers[i]);
-      $('.brick3 .inner #options').append(question.answers[i]["title"] + ' <input type="radio" name="radio" value="value1"></input><br/>');
+      $('.brick3 .inner #options').append(question.answers[i]["title"] + ' <img src="/assets/img/radio_but_off.png"/><br/>');
     }
-    $('.brick3 .inner img').attr('src', 'http://red.pccv.org.au/img/' + question.image);
+    $('.brick3 .inner #infographic').attr('src', 'http://red.pccv.org.au/img/' + question.image);
     $('.brick3').show();
   });
   
