@@ -17,7 +17,7 @@ jQuery(function($) {
     $('.brick3 .inner p').html("");
     for (var i = 0; i < question.answers.length; i++) {
       console.log(question.answers[i]);
-      $('.brick3 .inner #options').append('<input type="radio" name="radio" value="value1"> ' + question.answers[i]["title"] + '</input><br/>');
+      $('.brick3 .inner #options').append(question.answers[i]["title"] + ' <input type="radio" name="radio" value="value1"></input><br/>');
     }
     $('.brick3').show();
   });
