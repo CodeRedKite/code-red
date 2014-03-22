@@ -132,9 +132,18 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
   cursor: pointer;
+  background-color:#fff !important;
+  border-radius: 30px !important;
+  border: none !important;
+  width: 100px !important;
+  height: 50px !important;
+  color: #333333 !important;
+  font-size: 20px !important;
+  font-family:"BPreplay" !important;
 }
+	
+	
 label,
 select,
 button,
@@ -208,6 +217,10 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+  
+  p {
+	  font-size: 24px !important;
   }
 }
 body {
@@ -557,7 +570,11 @@ a:focus {
   clear: both;
 }
 p {
+	margin-top: 20px !important;
   margin: 0 0 10px;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  background:rgba(0,0,0,0.5);
 }
 .lead {
   margin-bottom: 20px;
@@ -1001,6 +1018,7 @@ input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
   *margin-top: 0;
+  font-size: 20px !important;
   /* IE7 */
 
   margin-top: 1px \9;
