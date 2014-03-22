@@ -7,6 +7,8 @@ function getRandomInt(min, max) {
 jQuery(function($) {
 
   $('.brick3').hide();
+  $('.brick3 .inner p').hide();
+  $('.brick3 .inner input').hide();
   $.get( "http://red.pccv.org.au/profiles/form2", function( data ) {
     json = JSON.parse(data);
     console.log(json);
@@ -14,7 +16,7 @@ jQuery(function($) {
     console.log(question);
     console.log(question.text);
     $('.brick3 .inner h1').html(question.text);
-    $('.brick3 .inner p').html("");
+    $('.brick3 .inner p').html(question.impact);
     for (var i = 0; i < question.answers.length; i++) {
       console.log(question.answers[i]);
       $('.brick3 .inner #options').append(question.answers[i]["title"] + ' <input type="radio" name="radio" value="value1"></input><br/>');
@@ -22,6 +24,12 @@ jQuery(function($) {
     $('.brick3').show();
   });
   
+  $("#options").on('click', function(e) {
+    e.preventDefault();
+    $('.brick3 .inner p').show();
+      $('.brick3 .inner input').show();
+  });
+
     $('.next').click(function() {
         $('#answer').slideToggle();
         $('#navbar').slideToggle();
