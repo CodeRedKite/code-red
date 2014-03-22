@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>ARGO Template Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description">
+        <meta name="author" content="WPStrong">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        
+		<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {padding: 60px 0 0 0;}
+        </style>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">ARGO</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#markup">Markup</a></li>
+                            <li><a href="#styles">Styles</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+            
+                <div class="hero-unit">
+                    <h1>ARGO Template Documentation</h1>
+                   <p></p>
+                    <p class="well well-small">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page <a href="http://themeforest.net/user/wpstrong">contact form</a> here. Thanks so much!</p>
+                    <div class="row-fluid">
+                        <div class="span3"><a href="http://themeforest.net/user/wpstrong" class="btn btn-primary btn-large btn-block">Item Support</a></div>
+                        <div class="span3"><a href="#changelog" role="button" class="btn btn-success btn-large btn-block" data-toggle="modal">Changelog</a></div>
+                        <div class="span3"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">Credits</a></div>
+                    </div>
+    
+                </div>
+                
+                <hr>
+                
+                <div class="row-fluid">
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author:</td>
+                                <td><a href="http://themeforest.net/user/wpstrong">WPStrong</a> &amp; <a href="http://themeforest.net/user/dzoan">DZOAN</a></td>
+                            </tr>
+                            <tr>
+                                <td>Contact:</td>
+                                <td><a href="mailto:wpstrongtheme@gmail.com">wpstrongtheme@gmail.com</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author URL:</td>
+                                <td><a href="http://themeforest.net/user/wpstrong">http://themeforest.net/user/wpstrong</a></td>
+                            </tr>
+                            <tr>
+                                <td>Item URL:</td>
+                                <td><a href="#nowhere"></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Current Version:</td>
+                                <td>1.0</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation Version</td>
+                                <td>1.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Created:</td>
+                                <td>2013-03-28</td>
+                            </tr>
+                            <tr>
+                                <td>Modified:</td>
+                                <td>2013-03-28</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr>
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+          
+            <!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="markup">
+                <div class="page-header">
+                    <h1>Markup</h1>
+                </div>
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>General Markup</h3>
+                        <p> The general template structure is the same throughout the template. Here is the general structure.</p>
+                    </div>
+            
+                    <div class="span9"> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7 ]&gt;&lt;html style=&quot;margin-top: 0 !important&quot; class=&quot;ie ie6&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7 ]&gt;&lt;html style=&quot;margin-top: 0 !important&quot; class=&quot;ie ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8 ]&gt;&lt;html style=&quot;margin-top: 0 !important&quot; class=&quot;ie ie8&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if (gte IE 9)|!(IE)]&gt;&lt;!--&gt; &lt;!--&lt;![endif]--&gt;
+&lt;html style=&quot;margin-top: 0 !important&quot; lang=&quot;en-US&quot;&gt; &lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;title&gt;Argo&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+    &lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,300italic' rel='stylesheet' type='text/css'&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/style.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; &gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/responsive.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; &gt;
+    &lt;script src=&quot;assets/js/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;!--[if lt IE 9]&gt;
+      &lt;script src=&quot;assets/js/html5shiv.js&quot;&gt;&lt;/script&gt;
+       &lt;link href=&quot;assets/css/ie.css&quot; rel='stylesheet' type='text/css'&gt;
+    &lt;![endif]--&gt;
+    
+    &lt;!--[if IE 7]&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/font-awesome-ie7.min.css&quot;&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header id=&quot;header&quot;&gt;
+&lt;/header&gt; &lt;!-- End header --&gt;
+
+&lt;div id=&quot;navbar&quot; class=&quot;navbar&quot;&gt;
+ 
+&lt;/div&gt; &lt;!-- end navbar --&gt;
+
+&lt;div id=&quot;services&quot; class=&quot;section&quot;&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;portfolio&quot; class=&quot;section&quot;&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;purchase&quot; class=&quot;divider section&quot;&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;about-us&quot; class=&quot;section&quot;&gt;
+&lt;/div&gt; &lt;!-- end About us  --&gt;
+
+&lt;div id=&quot;blog&quot; class=&quot;section&quot;&gt;
+&lt;/div&gt;    &lt;!-- end Blog --&gt;
+
+&lt;div id=&quot;testimonial&quot; class=&quot;divider section&quot;&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;contact&quot; class=&quot;section&quot;&gt;
+&lt;/div&gt;
+
+&lt;footer id=&quot;footer&quot;&gt;
+&lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            
+                <hr />
+            
+            </section>
+            <!-- ========================= SECTION: MARKUP >> END ========================= -->
+            
+
+
+            <!-- ========================= SECTION: STYLES >> START ========================= -->
+            <section id="styles">
+                <div class="page-header">
+                    <h1>Styles <small>Styles customization and highlights</small></h1>
+                </div>
+            
+               
+                <div class="row">
+                    <div class="span3">
+                        <h3>Stylesheets</h3>
+                        <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>styles.css</code></td>
+                                    <td>General style &amp; reset css.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>responsive.css</code></td>
+                                    <td>Contain media queries and style for different screen size</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ie.css</code></td>
+                                    <td>Style for IE.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>font-awesome-ie7.css</code></td>
+                                    <td>Make Font Awesome works with IE 7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr />
+                
+            </section>
+            <!-- ========================= SECTION: STYLES >> END ========================= -->
+            
+            
+            
+            <!-- ========================= SECTION: JAVASCRIPT >> START ========================= -->
+            <section id="javascript">
+            
+                <div class="page-header">
+                    <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+                </div>
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>JavaScript Files</h3>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tag</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>jquery.js</code></td>
+                                    <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>main.js</code></td>
+                                    <td>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>argo-slide.js</code></td>
+                                    <td>Some hacks for the sliders.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr />
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>Customize Slider</h3>
+                        <p>If you want to change the slider's speed transition, open up the file <code> argo-slide.js </code> and change the following code: </p>
+                    </div>
+                    <div class="span9">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js">jQuery(function($){
+    /**
+     * Init slide
+     * --------
+     */
+    var options = {
+        nextButton: true,
+        prevButton: true,
+       // pagination: true,
+        animateStartingFrameIn: true,
+      //  autoPlay: true,
+        autoPlayDelay: 3000,
+    };
+    var mySequence = $(&quot;#sequence&quot;).sequence(options).data(&quot;sequence&quot;);
+})
+                  
+                    </div>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: JAVASCRIPT >> END ========================= -->
+
+
+
+            <hr />
+    
+            <div class="goodbye">
+                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; WPStrong 2013</p>
+            </footer>
+            
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+         
+        
+        <!-- CHANGELOG >> START -->
+        <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="changelog-label">Changelog</h3>
+            </div>
+            <div class="modal-body">
+               <strong>** Version 1.0 / 31.03.2013 – Initial release</strong>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CHANGELOG >> END -->
+        
+        
+        
+        <!-- CREDITS >> START -->
+        <div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="credits-label">Credits</h3>
+            </div>
+            <div class="modal-body">
+                <p>I've used the following images, icons or other files as listed.</p>
+                <h3>JavaScript</h3>
+                <ol>
+                    <li><a href="http://jquery.com/">jQuery</a> <small>&mdash; jQuery JavaScript Library </small></li>
+                    <li><a href="http://code.google.com/p/html5shiv/">HTML5 Shiv </a> <small>&mdash; @afarkas @jdalton @jon_neal @rem </small></li>
+                    <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> <small>&mdash; Bootstrap Framework </small></li>
+                    <li><a href="http://isotope.metafizzy.co">Isotope Jquery plugin</a> <small>&mdash;  (properly licensed) </small></li>
+                    <li><a href="http://www.sequencejs.com/">SequenceJS</a> <small>&mdash;  Javascript Slider </small></li>
+                    <li><a href="http://manos.malihu.gr/jquery-custom-content-scroller/">mCustomScrollbar</a> <small>&mdash;  jQuery custom content scroller </small></li>
+                    <li><a href="http://www.codrops.com">HoverDir</a> <small>&mdash;  By CoDrops.</small></li>
+                </ol>
+                <h3>CSS</h3>
+                <ol>
+                    <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> <small>&mdash; Bootstrap Framework </small> </li>
+                    <li><a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a> <small>&mdash; Icon </small> </li>
+                    <li><a href="http://designmodo.com/linecons-free/">Linecons Free</a> <small>&mdash; Icon </small> </li>
+                </ol>
+                <h3>Images</h3>
+                <ol>
+                    <li><a href="http://www.designscene.net/architecture">DesignScene</a> </li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CREDITS >> END -->
+
+        <!-- loading javascripts -->
+		<script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>
