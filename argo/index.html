@@ -12,42 +12,51 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" >
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" >
 	<script src="assets/js/jquery.js"></script>
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-       <link href="assets/css/ie.css" rel='stylesheet' type='text/css'>
-       <![endif]-->
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.js"></script>
+			 <link href="assets/css/ie.css" rel='stylesheet' type='text/css'>
+			 <![endif]-->
 
-    <!--[if IE 7]>
+		<!--[if IE 7]>
 		<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
 		<![endif]-->
 	</head>
 	<body data-spy="scroll" data-target=".navbar">
 
-		<header id="header">
+		<header id="header" class="step1">
 			<div class="header-holder">
-				<div class="container hidden-phone">
+				<div class="container hidden-phone step1">
 					<div class="brow">
 						<div class="brick1 logo_container">
 							<a href="#" class="nav-item clearfix">
 								<div class="nav-hover"></div>
-								<h1 class="logo">Title</h1>
+								<img class="logo" alt="" src="assets/img/logo.png">
 							</a>
 						</div>
 						<div class="brick1 transparent"></div>
 					</div>
 					<div class="brow">
-						<div class="slogan brick3 boffset1 transparent text-right">
-							<div class="inner">
-								<h1>Argo Theme dolor sit amet tElasde</h1>
-								<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut
-									dolore magna aliqua. <br>
-									Ut enim ad minim veniam, quis nostrud ARGO.</p>
+							<div class="slogan brick3 boffset1 transparent text-right">
+								<div class="inner">
+									<h1>RedKite</h1>
+									<div id="options">
+										
+									</div>
+									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut
+										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ARGO.</p>
+									</div>
+								</div>
+																<div class="brick1 odd">
+									<a href="#answer" class="nav-item next">
+										<div class="nav-hover"></div>
+										<i class="li_paperplane"></i>
+										<span>Next</span>
+									</a>
 								</div>
 							</div>
-						</div>
 					</div>
 
-					<div class="container visible-phone">
+					<div class="container visible-phone step1">
 						<div class="brow">
 							<div class="brick1 logo_container">
 								<a href="#" class="nav-item clearfix">
@@ -61,19 +70,29 @@
 							<div class="slogan brick3 boffset1 transparent text-right">
 								<div class="inner">
 									<h1>Argo Theme dolor sit amet tElasde</h1>
+									<div id="options">
+										
+									</div>
 									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut
 										dolore magna aliqua. <br>
 										Ut enim ad minim veniam, quis nostrud ARGO.</p>
 									</div>
 								</div>
+								<div class="brick1 odd">
+									<a href="#answer" class="nav-item next">
+										<div class="nav-hover"></div>
+										<i class="li_paperplane"></i>
+										<span>Next</span>
+									</a>
+								</div>
 							</div>
-						</div>
 
+						</div>
 					</div>
 				</header> <!-- End header -->
-				<div id="navbar" class="navbar">
-					<div class="navbar-inner">
 
+				<div id="navbar" class="navbar hide">
+					<div class="navbar-inner">
 						<div class="container">
 							<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
 								<span class="icon-bar"></span>
@@ -83,22 +102,15 @@
 							<div class="nav-collapse collapse">
 								<ul class="nav">
 									<li class="">
-										<a href="#answer"><i class="li_paperplane"></i>Answer</a>
+										<a href="#answer"><i class="li_paperplane"></i>Share</a>
 									</li>
-
 								</ul>
 							</div>
-
 						</div>
 					</div>
 				</div> <!-- end navbar -->
 
-
-
-
-
-
-				<div id="answer" class="section">
+				<div id="answer" class="section hide">
 					<div class="container">
 						<div class="hero">
 							<h1>Share</h1>
@@ -106,15 +118,17 @@
 							<div>
 								<input type='button' id ="submission_form_button" value='Share' />
 							</div>
-
 						</div>
+                        </div>
+                        </div>
 
 						<footer id="footer">
 							<div class="container">
 								&copy; 2013  Red Kite etc…
 							</div>
-							<a href="#" id="btn_up">UP</a>
+							<a href="#" id="btn_up">Refresh</a>
 						</footer>
+
 						<!-- Bootstrap js -->
 						<script src="assets/js/bootstrap-transition.js"></script>
 						<script src="assets/js/bootstrap-modal.js"></script>
@@ -129,6 +143,6 @@
 						<script src="assets/js/jquery.isotope.min.js"></script>
 						<script src="assets/js/red.js"></script>
 						<script src="assets/js/main.js"></script>
-					</form>
-				</body>
-				</html>
+
+					</body>
+					</html>

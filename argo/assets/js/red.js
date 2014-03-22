@@ -5,6 +5,7 @@ function getRandomInt(min, max) {
 }
 
 jQuery(function($) {
+
   $('.brick3').hide();
   $.get( "http://red.pccv.org.au/profiles/form2", function( data ) {
     json = JSON.parse(data);
@@ -14,12 +15,37 @@ jQuery(function($) {
     console.log(question.text);
     $('.brick3 .inner h1').html(question.text);
     $('.brick3 .inner p').html("");
-    // console.log(question.answers);
-    // console.log(question.answers.length);
-    // for (var i = 0; i < question.answers.length; i++) {
-    //   console.log(question.answers[i]);
-    //   $('.brick3 .inner p').append(question.answers[i].title);
-    // }
-    $('.brick3').show('slow');
+    for (var i = 0; i < question.answers.length; i++) {
+      console.log(question.answers[i]);
+      $('.brick3 .inner #options').append('<input type="radio" name="radio" value="value1"> ' + question.answers[i]["title"] + '</input><br/>');
+    }
+    $('.brick3').show();
   });
+  
+    $('.next').click(function() {
+        $('#answer').slideToggle();
+        $('#navbar').slideToggle();
+
+        $('.step1').slideToggle();
+    });
+
+    $('#btn_up').click(function() {
+        $('#answer').slideToggle();
+        $('#navbar').slideToggle();
+
+        $('.step1').slideToggle();
+    });
+
+    $('#submission_form_button').click(function() {
+        alert('shared!');
+        // $.ajax({
+        //     url: 'some-url',
+        //     type: 'post',
+        //     dataType: 'json',
+        //     data: $('form#myForm').serialize(),
+        //     success: function(data) {
+        //                ... do something with the data...
+        //              }
+        // });
+    });
 });
