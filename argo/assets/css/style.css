@@ -2016,6 +2016,9 @@ table th[class*="span"],
 .share_text {
   line-height:28px;
 }
+#submission_form_button {
+  margin-bottom:10px;
+}
 /*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
