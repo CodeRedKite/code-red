@@ -12,11 +12,11 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-@font-face {
-font-family: BPreplay;
-src: url("../font/BPreplay.otf") format("opentype");
+ @font-face {
+  font-family: BPreplay;
+  src: url("../font/BPreplay.otf") format("opentype");
 }
- .clearfix {
+.clearfix {
   *zoom: 1;
 }
 .clearfix:before,
@@ -146,8 +146,8 @@ input[type="submit"] {
   font-size: 20px !important;
   font-family:"BPreplay" !important;
 }
-	
-	
+
+
 label,
 select,
 button,
@@ -222,10 +222,10 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-  
+
   p {
-	  font-size: 24px !important;
-  }
+   font-size: 24px !important;
+ }
 }
 body {
   margin: 0;
@@ -3960,7 +3960,7 @@ button.close {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ee2e24;
-   border: none;
+  border: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -6239,6 +6239,10 @@ a:active {
   margin-left: 0px;
   *zoom: 1;
 }
+.top {
+  margin-top: 77.5px;
+
+}
 .brow:before,
 .brow:after {
   display: table;
@@ -6297,7 +6301,7 @@ a:active {
   margin-left: 390px;
 }
 .boffset1 {
-  margin-left: 195px;
+  /*margin-left: 195px;*/
 }
 /**
  * HEADER
@@ -6333,7 +6337,6 @@ a:active {
 #header .logo_container .logo {
   text-align: center;
   font-size: 64px;
-  margin-top: 77.5px;
   background: url(
 }
 #header .logo_container .logo a:hover,
