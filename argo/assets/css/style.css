@@ -2019,6 +2019,10 @@ table th[class*="span"],
 #submission_form_button {
   margin-bottom:10px;
 }
+.find-more {
+  padding:15px;
+  border-radius:0 0 30px 0;
+}
 /*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap

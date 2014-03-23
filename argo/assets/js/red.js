@@ -22,7 +22,7 @@ jQuery(function($) {
         $('.brick3 .inner p').html(question.impact);
         for (var i = 0; i < question.answers.length; i++) {
             console.log(question.answers[i]);
-            $('.brick3 .inner #options').append('<div class="radio-set"><span class="radio-button"></span><span class="radio-text ' + question.answers[i]["correct"] + '">' + question.answers[i]["title"] + '</span>' + '</div>');
+            $('.brick3 .inner .options').append('<div class="radio-set"><span class="radio-button"></span><span class="radio-text ' + question.answers[i]["correct"] + '">' + question.answers[i]["title"] + '</span>' + '</div>');
         }
 
         $('.brick3 .inner #infographic').attr('src', 'assets/img/' + question.image);
@@ -30,7 +30,7 @@ jQuery(function($) {
 
     });
 
-    $("#options").on('click', function(e) {
+    $(".options").on('click', function(e) {
         e.preventDefault();
         $(".front").hide();
         $('.brick3 .inner p').show();
@@ -64,7 +64,7 @@ jQuery(function($) {
             dataType: 'json',
             data: $('form#myForm').serialize(),
             success: function(data) {
-                $('.brick3 .inner h1').html("Thank you for helping redkite lighten the load of familes all around Australia.<p>Find out more…");
+                $('.brick3 .inner h1').html("Thank you for helping redkite lighten the load of familes all around Australia.<p class='find-more'>Find out more…");
                 $('.brick3 .inner #infographic').hide();
 
             }
