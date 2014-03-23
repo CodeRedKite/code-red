@@ -1113,13 +1113,7 @@
   }
   .boffset1 {
     margin-left:0px !important;
-    margin-top:0px;
-  }
-  .inner {
-    padding-left:0px !important;
-  }
-  .radio-set {
-    margin-top:10px;
+    margin-top:105px;
   }
 }
 @media (max-width: 979px) {
