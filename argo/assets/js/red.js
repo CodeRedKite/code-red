@@ -40,6 +40,7 @@ jQuery(function($) {
         $('.share_text').show();
 
         $('.brick3 .inner h1').html("RedKite lightens the load with…");
+        $('.brick3 .inner h1').addClass('hidden');
     });
 
     $('.next').click(function() {
