@@ -22,7 +22,7 @@ jQuery(function($) {
         $('.brick3 .inner p').html(question.impact);
         for (var i = 0; i < question.answers.length; i++) {
             console.log(question.answers[i]);
-            $('.brick3 .inner #options').append('<div class="radio-set"><span class="radio-text ' + question.answers[i]["correct"] + '">' + question.answers[i]["title"] + '</span>' + ' <span class="radio-button"></span></div>');
+            $('.brick3 .inner #options').append('<div class="radio-set"><span class="radio-button"></span><span class="radio-text ' + question.answers[i]["correct"] + '">' + question.answers[i]["title"] + '</span>' + '</div>');
         }
 
         $('.brick3 .inner #infographic').attr('src', 'assets/img/' + question.image);

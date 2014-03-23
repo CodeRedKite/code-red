@@ -1989,6 +1989,7 @@ table th[class*="span"],
 }
 .radio-set {
   margin-bottom:13px;
+  margin-left:-5px;
 }
 .radio-set:hover {
   cursor:pointer;
@@ -2006,13 +2007,15 @@ table th[class*="span"],
   width:38px;
   height:38px;
   vertical-align:top;
-  margin-left:10px;
+  margin-right:10px;
 }
 .radio-button:hover {
   background-image:url("/assets/img/radio_but_on.png");
   cursor:pointer;
 }
-
+.share_text {
+  line-height:28px;
+}
 /*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
