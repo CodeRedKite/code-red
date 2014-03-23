@@ -1994,14 +1994,14 @@ table th[class*="span"],
   cursor:pointer;
 }
 .radio-set:hover .radio-button {
-  background-image:url("/assets/img/radio_but_on.png");
+  background-image:url("img/radio_but_on.png");
 }
 .radio-text {
   line-height:39px;
   font-size:16px;
 }
 .radio-button {
-  background-image:url("/assets/img/radio_but_off.png");
+  background-image:url("img/radio_but_off.png");
   display:inline-block;
   width:38px;
   height:38px;
